@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWT</title>
+
+    <link rel="stylesheet" href="scss/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="wrap_menu">
+                <div class="nav_container">
+                    <div class="nav_logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="nav_catalog">
+                        <a href="" id="open_catalog" class="open_catalog">Catalog</a>
+                        <div class="nav_catalog_container" id="nav_catalog_container">
+                            <div class="nav_catalog_container_img">
+                                <img src="" alt="" id="catalog_img">
+                            </div>
+                            <div class="nav_catalog_container_href">
+                                <a href="catalog.html" id="chokolate">Chocolate candies</a><br>
+                                <a href="catalog.html" id="marmelad">Marmalade</a><br>
+                                <a href="catalog.html" id="zefir">Zephyr</a><br>
+                                <a href="catalog.html" id="drinks">Beverages</a><br>
+                            </div>
+                            <div class="close_catalog" id="close_catalog">Close</div>
+                        </div>
+                    </div>
+                    <div class="nav_control">
+                        <form action="">
+                            <input type="text" placeholder="Find what you want">
+                            <button><img src="img/search.svg" alt=""></button>
+                        </form>
+                        <a href="profile.html" class="nav_man"><img src="img/man_menu.svg" alt=""></a>
+                        <a href="backet.html" class="nav_backet"><img src="img/backet.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_menu">
+            <div class="mobile_menu_logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="mobile_menu_nav">
+                <span></span>
+                <span class="middle_span"></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile_menu_block">
+            <form action="">
+                <input type="text" placeholder="Find what you want">
+                <button><img src="img/search.svg" alt=""></button>
+            </form>
+            <div class="mobile_menu_href">
+                <a href="catalog.html">Catalog</a>
+                <a href="profile.html">Profile</a>
+                <a href="backet.html">Cart</a>
+            </div>
+        </div>
+        <div class="main_img"></div>
+    </header>
+
+    <div class="wrap_main">
+        <section class="about_us">
+            <div class="about_us_container">
+                <div class="about_us_block">
+                    <h2>Just</h2>
+                    <p>Stub</p>
+                </div>
+                <div class="about_us_block">
+                    <h2>Inexpensive!</h2>
+                    <p>Stub</p>
+                </div>
+                <div class="about_us_block">
+                    <h2>Free shipping!</h2>
+                    <p>Stub</p>
+                </div>
+            </div>
+        </section>
+        <section class="main_category">
+            <h2>Product categories</h2>
+            <div class="main_category_container">
+                <div class="main_category_block">
+                    <a href="catalog.html">
+                        <div class="main_category_block_desc">
+                            Chocolate candies
+                        </div>
+                        <div class="main_category_block_img">
+                            <img src="img/chocolate_category.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="main_category_block">
+                    <a href="catalog.html">
+                        <div class="main_category_block_desc">
+                            Zephyr
+                        </div>
+                        <div class="main_category_block_img">
+                            <img src="img/zefir_for_catalog.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="main_category_block">
+                    <a href="catalog.html">
+                        <div class="main_category_block_desc">
+                            Marmalade
+                        </div>
+                        <div class="main_category_block_img">
+                            <img src="img/marmelad_category.png" alt="">
+                        </div>
+                    </a>
+                </div>
+        </section>
+
+        <section class="mobile_main_category">
+            <h2>Product categories</h2>
+            <div class="mobile_main_category_container">
+                <div class="mobile_main_category_block">
+                    <a href="catalog.html">
+                        <div class="mobile_main_category_block_desc">
+                            Chocolate candies
+                        </div>
+                        <div class="mobile_main_category_block_img">
+                            <img src="img/chocolate_category.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="mobile_main_category_block">
+                    <a href="catalog.html">
+                        <div class="mobile_main_category_block_desc">
+                            Zephyr
+                        </div>
+                        <div class="mobile_main_category_block_img">
+                            <img src="img/zefir_for_catalog.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="mobile_main_category_block">
+                    <a href="catalog.html">
+                        <div class="mobile_main_category_block_desc">
+                            Marmalade
+                        </div>
+                        <div class="mobile_main_category_block_img">
+                            <img src="img/marmelad_category.png" alt="">
+                        </div>
+                    </a>
+                </div>
+        </section>
+
+        <section class="products">
+            <h2>Chocolates in a box</h2>
+            <div class="products_container">
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mobile_products">
+            <h2>Chocolates in a box</h2>
+            <div class="mobile_products_container">
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="mobile_products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="mobile_products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/Haute Couture red.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">"Haute Couture" 
+                            with cherry flavor</p>
+                        <p class="mobile_products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_products_button">
+                    <a href="#">More</a>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <h2>Marmalade</h2>
+            <div class="products_container">
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/chernika.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">Smokva "Blueberry"</p>
+                        <p class="products_block_desc_weight">2 kg</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mobile_products">
+            <h2>Marmalade</h2>
+            <div class="mobile_products_container">
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/chernika.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">Smokva "Blueberry"</p>
+                        <p class="mobile_products_block_desc_weight">2 kg</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <h2>Zephyr</h2>
+            <div class="products_container">
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/zefir.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">Zephyr"Strawberry"</p>
+                        <p class="products_block_desc_weight">125 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/zefir.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">Zephyr"Strawberry"</p>
+                        <p class="products_block_desc_weight">125 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/zefir.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">Zephyr"Strawberry"</p>
+                        <p class="products_block_desc_weight">125 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/zefir.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">Zephyr"Strawberry"</p>
+                        <p class="products_block_desc_weight">125 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/zefir.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">Zephyr"Strawberry"</p>
+                        <p class="products_block_desc_weight">125 g</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mobile_products">
+            <h2>Zephyr</h2>
+            <div class="mobile_products_container">
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/zefir.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">Zephyr "Crimson"</p>
+                        <p class="mobile_products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/zefir.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">Zephyr "Crimson"</p>
+                        <p class="mobile_products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/zefir.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">Zephyr "Crimson"</p>
+                        <p class="mobile_products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_products_button">
+                    <a href="#">More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Beverages</h2>
+            <div class="products_container">
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/chupachups.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">Drink ChupaChups Melon with cream</p>
+                        <p class="products_block_desc_weight">0.5 l</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/chupachups.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">Drink ChupaChups Melon with cream</p>
+                        <p class="products_block_desc_weight">0.5 l</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_block">
+                    <div class="products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                        <a href="#"><img src="img/repost.svg" alt=""></a>
+                    </div>
+                    <div class="products_block_img">
+                        <img src="img/chupachups.png" alt="">
+                    </div>
+                    <div class="products_block_desc">
+                        <p class="products_block_desc_name">Drink ChupaChups Melon with cream</p>
+                        <p class="products_block_desc_weight">0.5 l</p>
+                    </div>
+                    <div class="products_block_info">
+                        <div class="products_block_info_amount">
+                            <a href="#" class="product_minus">-</a>
+                            <p class="product_amount">1</p>
+                            <a href="#" class="product_plus">+</a>
+                        </div>
+                        <div class="products_block_info_price">
+                            <p class="products_block_info_price_bold">10¥</p>
+                            <p class="products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mobile_products">
+            <h2>Beverages</h2>
+            <div class="mobile_products_container">
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/chupachups.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">Drink ChupaChups Melon with cream</p>
+                        <p class="mobile_products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/chupachups.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">Drink ChupaChups Melon with cream</p>
+                        <p class="mobile_products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_products_block">
+                    <div class="mobile_products_block_button">
+                        <a href="#"><img src="img/like.svg" alt=""></a>
+                    </div>
+                    <div class="mobile_products_block_img">
+                        <img src="img/chupachups.png" alt="">
+                    </div>
+                    <div class="mobile_products_block_desc">
+                        <p class="mobile_products_block_desc_name">Drink ChupaChups Melon with cream</p>
+                        <p class="mobile_products_block_desc_weight">100 g</p>
+                    </div>
+                    <div class="mobile_products_block_info">
+                        <div class="mobile_products_block_info_amount">
+                            <a href="#" class="mobile_product_minus">-</a>
+                            <p class="mobile_product_amount">1</p>
+                            <a href="#" class="mobile_product_plus">+</a>
+                        </div>
+                        <div class="mobile_products_block_info_price">
+                            <p class="mobile_products_block_info_price_bold">10¥</p>
+                            <p class="mobile_products_block_info_price_medium">(100 SWT)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="wrap_main">
+            <div class="footer_container">
+                <div class="footer_info">
+                    <img src="img/logo2.png" alt="">
+                    <p>support-info@swt.us</p>
+                </div>
+                <div class="footer_menu1">
+                    <a href="#">Payment</a><br>
+                    <a href="#">Delivery</a><br>
+                    <a href="#">Data Policy</a><br>
+                </div>
+                <div class="footer_menu2">
+                    <a href="#">Support</a><br>
+                    <a href="profile.html">Personal Area</a><br>
+                    <a href="#">Promotions and offers</a><br>
+                </div>
+            </div>
+            <div class="footer_item">
+                <p>SWT, ©2021</p>
+                <div class="footer_social">
+                    <a href="" class="mail_icon_box">
+                        <svg class="mail_icon">
+                            <use xlink:href="img/sprite.svg#mail_icon"></use>
+                        </svg>
+                    </a>
+
+                    <a href="" class="instagram_icon_box">
+                        <svg class="instagram_icon">
+                            <use xlink:href="img/sprite.svg#instagram_icon"></use>
+                        </svg>
+                    </a>
+
+                    <a href="" class="telegram_icon_box">
+                        <svg class="telegram_icon">
+                            <use xlink:href="img/sprite.svg#telegram_icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src = "https://code.jquery.com/jquery-latest.js"></script>
+    <script src = "js/slick.min.js"></script>
+    <script src = "js/main.js"></script>
+
+</body>
+</html>
